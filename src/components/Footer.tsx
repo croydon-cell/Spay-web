@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           {/* Logo and description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <CreditCard className="h-8 w-8 text-primary" strokeWidth={1.5} />
+              <img src="/logo.png" alt="SubscribePay Logo" className="h-10 w-10" />
               <span className="text-xl font-bold">
                 <span className="text-gray-400">Subscribe</span>
                 <span className="text-primary">Pay</span>
