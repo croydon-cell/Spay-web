@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Spay-web/static/css/main.65566352.css",
+    "main.js": "/Spay-web/static/js/main.aaeef366.js",
+    "index.html": "/Spay-web/index.html",
+    "main.65566352.css.map": "/Spay-web/static/css/main.65566352.css.map",
+    "main.aaeef366.js.map": "/Spay-web/static/js/main.aaeef366.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65566352.css",
+    "static/js/main.aaeef366.js"
+  ]
+}
