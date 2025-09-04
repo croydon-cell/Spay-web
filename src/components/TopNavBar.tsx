@@ -55,8 +55,19 @@ const TopNavBar: React.FC<{
             onClick={() => onNavigate('landing')}
           >
             <div className="relative">
-              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="h-10 w-10 rounded-xl shadow-md group-hover:shadow-lg transition-shadow" />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <img 
+                src={`${process.env.PUBLIC_URL}/logo.png`} 
+                alt="logo" 
+                className="h-10 w-10 rounded-xl shadow-md group-hover:shadow-lg transition-shadow" 
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = document.createElement('div');
+                  fallback.className = 'h-10 w-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md';
+                  fallback.textContent = 'SP';
+                  target.parentNode?.appendChild(fallback);
+                }}
+              />
             </div>
             <span className="text-2xl font-bold tracking-tight">
               <span className="text-blue-600">Subscribe</span>
