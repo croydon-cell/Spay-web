@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Calendar, Users, IndianRupee, RotateCcw } from 'lucide-react';
+import MetricCard from '../ui/MetricCard';
 
 const MetricsCards: React.FC = () => {
   const [counters, setCounters] = useState({
@@ -52,6 +53,8 @@ const MetricsCards: React.FC = () => {
       icon: Calendar,
       change: '+12.5%',
       positive: true,
+      color: 'blue',
+      description: 'Active recurring payments'
     },
     {
       title: 'Active Customers',
@@ -59,6 +62,8 @@ const MetricsCards: React.FC = () => {
       icon: Users,
       change: '+8.2%',
       positive: true,
+      color: 'green',
+      description: 'Verified customer accounts'
     },
     {
       title: 'Monthly Revenue',
@@ -66,6 +71,8 @@ const MetricsCards: React.FC = () => {
       icon: IndianRupee,
       change: '+15.3%',
       positive: true,
+      color: 'purple',
+      description: 'Total revenue this month'
     },
     {
       title: 'Retry Success Rate',
@@ -73,34 +80,54 @@ const MetricsCards: React.FC = () => {
       icon: RotateCcw,
       change: '+2.1%',
       positive: true,
+      color: 'orange',
+      description: 'Smart retry effectiveness'
     },
   ];
+
+  const colorClasses = {
+    blue: {
+      bg: 'from-blue-50 to-blue-100',
+      icon: 'bg-blue-500',
+      text: 'text-blue-900',
+      border: 'border-blue-200'
+    },
+    green: {
+      bg: 'from-green-50 to-green-100',
+      icon: 'bg-green-500',
+      text: 'text-green-900',
+      border: 'border-green-200'
+    },
+    purple: {
+      bg: 'from-purple-50 to-purple-100',
+      icon: 'bg-purple-500',
+      text: 'text-purple-900',
+      border: 'border-purple-200'
+    },
+    orange: {
+      bg: 'from-orange-50 to-orange-100',
+      icon: 'bg-orange-500',
+      text: 'text-orange-900',
+      border: 'border-orange-200'
+    }
+  };
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
       {metrics.map((metric, index) => (
-        <div
+        <MetricCard
           key={index}
-          className="glassmorphic rounded-2xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer group"
-        >
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl flex items-center justify-center group-hover:from-primary/20 group-hover:to-primary/10 transition-all duration-300">
-              <metric.icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
-            </div>
-            <span className={`text-sm font-semibold px-2 py-1 rounded-full ${
-              metric.positive 
-                ? 'text-green-600 bg-green-50' 
-                : 'text-red-600 bg-red-50'
-            }`}>
-              {metric.change}
-            </span>
-          </div>
-          
-          <div className="space-y-1">
-            <h3 className="text-3xl font-bold text-gray-900">{metric.value}</h3>
-            <p className="text-gray-600 text-sm">{metric.title}</p>
-          </div>
-        </div>
+          title={metric.title}
+          value={metric.value}
+          description={metric.description}
+          icon={metric.icon}
+          trend={{
+            value: metric.change,
+            positive: metric.positive
+          }}
+          color={metric.color as any}
+          variant="glass"
+        />
       ))}
     </div>
   );

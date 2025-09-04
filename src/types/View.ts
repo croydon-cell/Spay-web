@@ -1,0 +1,1 @@
+export type View = 'landing' | 'dashboard' | 'admin' | 'checkout' | 'login' | 'transactions' | 'payment' | 'refund' | 'customers' | 'analytics' | 'settings' | 'cable-dashboard' | 'cable-onboarding' | 'cable-plans' | 'cable-portal';
