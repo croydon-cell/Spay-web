@@ -55,7 +55,7 @@ const TopNavBar: React.FC<{
             onClick={() => onNavigate('landing')}
           >
             <div className="relative">
-              <img src="/logo.png" alt="logo" className="h-10 w-10 rounded-xl shadow-md group-hover:shadow-lg transition-shadow" />
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="h-10 w-10 rounded-xl shadow-md group-hover:shadow-lg transition-shadow" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <span className="text-2xl font-bold tracking-tight">
