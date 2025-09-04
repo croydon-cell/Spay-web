@@ -9,7 +9,7 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="SubscribePay" className="h-10 w-10 rounded-xl shadow-md" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="SubscribePay" className="h-10 w-10 rounded-xl shadow-md" />
           </div>
 
           {/* Navigation Links */}
