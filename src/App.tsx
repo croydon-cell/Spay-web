@@ -10,6 +10,8 @@ import Login from './components/Login';
 import TransactionsDashboard from './components/TransactionsDashboard';
 import PaymentDemo from './components/PaymentDemo';
 import RefundDemo from './components/RefundDemo';
+import DemoINRPayment from './components/DemoINRPayment';
+
 import TopNavBar from './components/TopNavBar';
 import AnalyticsComingSoon from './components/AnalyticsComingSoon';
 import CustomersPlaceholder from './components/CustomersPlaceholder';
@@ -57,6 +59,8 @@ function App() {
       {currentView === 'checkout' && <CheckoutPage />}
       {currentView === 'customers' && <CustomersPlaceholder />}
       {currentView === 'analytics' && <AnalyticsComingSoon />}
+      {currentView === 'demo-payment' && <DemoINRPayment />}
+
     </div>
   );
 }

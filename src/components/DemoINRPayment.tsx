@@ -11,7 +11,7 @@ const DemoINRPayment: React.FC = () => {
     setResult(null);
     try {
       const res = await fetch(
-        "https://subscribepay-prototype.onrender.com/api/v1/demo-inr-payment",
+        "http://localhost:8000/api/v1/demo-inr-payment",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -28,33 +28,64 @@ const DemoINRPayment: React.FC = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto my-8 p-6 bg-white rounded-lg shadow">
-      <h2 className="text-xl font-bold mb-4">Demo INR Payment Flow</h2>
-      <button
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-        onClick={runDemo}
-        disabled={loading}
-      >
-        {loading ? "Running..." : "Run Demo INR Payment"}
-      </button>
-      {error && <div className="text-red-600 mt-4">{error}</div>}
+    <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow">
+      <h2 className="text-2xl font-bold mb-6 text-center">🇮🇳 Demo INR Payment Gateway</h2>
+      <div className="text-center mb-6">
+        <button
+          className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-semibold"
+          onClick={runDemo}
+          disabled={loading}
+        >
+          {loading ? "Processing Payment..." : "💰 Run Demo ₹500 Payment"}
+        </button>
+      </div>
+      
+      {error && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+          ❌ Error: {error}
+        </div>
+      )}
+      
       {result && (
-        <div className="mt-6 space-y-4">
-          <div>
-            <h3 className="font-semibold">Invoice</h3>
-            <pre className="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{JSON.stringify(result.invoice, null, 2)}</pre>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div className="bg-blue-50 p-4 rounded-lg border">
+            <h3 className="font-bold text-lg mb-3 text-blue-800">📄 Invoice</h3>
+            <div className="space-y-2">
+              <p><span className="font-semibold">Amount:</span> ₹{result.invoice?.amount}</p>
+              <p><span className="font-semibold">Status:</span> <span className="text-green-600 font-semibold">{result.invoice?.status}</span></p>
+              <p><span className="font-semibold">Description:</span> {result.invoice?.description}</p>
+              <p><span className="font-semibold">Invoice ID:</span> {result.invoice?.invoice_id}</p>
+            </div>
           </div>
-          <div>
-            <h3 className="font-semibold">Payment</h3>
-            <pre className="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{JSON.stringify(result.payment, null, 2)}</pre>
+          
+          <div className="bg-green-50 p-4 rounded-lg border">
+            <h3 className="font-bold text-lg mb-3 text-green-800">💳 Payment</h3>
+            <div className="space-y-2">
+              <p><span className="font-semibold">Status:</span> <span className="text-green-600 font-semibold">SUCCESS</span></p>
+              <p><span className="font-semibold">Method:</span> Mock Bank Processing</p>
+              <p><span className="font-semibold">Bank:</span> DemoBank</p>
+              <p className="text-sm text-gray-600">{typeof result.payment === 'string' ? result.payment : JSON.stringify(result.payment)}</p>
+            </div>
           </div>
-          <div>
-            <h3 className="font-semibold">Settlement</h3>
-            <pre className="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{JSON.stringify(result.settlement, null, 2)}</pre>
+          
+          <div className="bg-purple-50 p-4 rounded-lg border">
+            <h3 className="font-bold text-lg mb-3 text-purple-800">🏦 Settlement</h3>
+            <div className="space-y-2">
+              <p><span className="font-semibold">Amount:</span> ₹{result.settlement?.amount || result.invoice?.amount}</p>
+              <p><span className="font-semibold">Status:</span> <span className="text-green-600 font-semibold">SETTLED</span></p>
+              <p><span className="font-semibold">Merchant:</span> Credited to Account</p>
+              <p className="text-sm text-gray-600">Money transferred to merchant account</p>
+            </div>
           </div>
-          <div>
-            <h3 className="font-semibold">Refund</h3>
-            <pre className="bg-gray-100 p-2 rounded text-xs overflow-x-auto">{JSON.stringify(result.refund, null, 2)}</pre>
+          
+          <div className="bg-orange-50 p-4 rounded-lg border">
+            <h3 className="font-bold text-lg mb-3 text-orange-800">↩️ Refund</h3>
+            <div className="space-y-2">
+              <p><span className="font-semibold">Amount:</span> ₹{result.refund?.amount}</p>
+              <p><span className="font-semibold">Status:</span> <span className="text-green-600 font-semibold">{result.refund?.status}</span></p>
+              <p><span className="font-semibold">Refund ID:</span> {result.refund?.refund_id}</p>
+              <p className="text-sm text-gray-600">Partial refund processed successfully</p>
+            </div>
           </div>
         </div>
       )}

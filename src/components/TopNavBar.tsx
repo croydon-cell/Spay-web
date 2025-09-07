@@ -6,6 +6,7 @@ import Badge from './ui/Badge';
 import { View } from '../types/View';
 
 const paymentsDropdown = [
+  { label: 'Demo Payment', view: 'demo-payment' as View },
   { label: 'Transactions', view: 'transactions' as View },
   { label: 'Refund', view: 'refund' as View },
 ];
@@ -143,7 +144,7 @@ const TopNavBar: React.FC<{
             <div className="relative" ref={paymentsRef}>
               <button
                 className={`flex items-center space-x-2 px-4 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
-                  ['transactions','refund'].includes(currentView) 
+                  ['demo-payment','transactions','refund'].includes(currentView) 
                     ? 'text-blue-600 bg-blue-50 shadow-sm' 
                     : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50/50'
                 }`}
