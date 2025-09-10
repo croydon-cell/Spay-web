@@ -32,15 +32,16 @@ const HeroSection: React.FC = () => {
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="heading-1 text-gray-900 leading-tight">
+                India's First{' '}
                 <span className="text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-                  Smart Subscription
+                  Offline Subscription
                 </span>
                 <br />
                 Payment Gateway
               </h1>
               
               <p className="body-large text-gray-600 leading-relaxed max-w-lg">
-                Seamlessly manage recurring payments across OTT, EdTech, SaaS, Fitness, Cable TV, and ISPs powered by UPI AutoPay and an intelligent retry system.
+                Seamlessly collect recurring payments for cable operators, ISPs, gyms, and tuition centers. Powered by UPI AutoPay + Smart Retry, SubversePay ensures predictable payments, fewer defaults, and lower MDR.
               </p>
             </div>
             
