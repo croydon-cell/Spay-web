@@ -20,7 +20,7 @@ import {
   Target
 } from 'lucide-react';
 
-const SubscribePayLanding: React.FC = () => {
+const SubversePayLanding: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <HeroSection />
@@ -69,7 +69,7 @@ const SubscribePayLanding: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
-                <Badge variant="success" size="md" className="mb-4">Why SubscribePay?</Badge>
+                <Badge variant="success" size="md" className="mb-4">Why SubversePay?</Badge>
                 <h2 className="heading-2 text-gray-900 mb-6">
                   Built for the Future of <span className="text-gradient">Recurring Payments</span>
                 </h2>
@@ -207,7 +207,7 @@ const SubscribePayLanding: React.FC = () => {
             Ready to Transform Your Payment Experience?
           </h2>
           <p className="body-large text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of businesses already using SubscribePay to power their subscription revenue.
+            Join thousands of businesses already using SubversePay to power their subscription revenue.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg" className="bg-white text-blue-600 hover:bg-gray-50">
@@ -239,4 +239,4 @@ const SubscribePayLanding: React.FC = () => {
   );
 };
 
-export default SubscribePayLanding;
+export default SubversePayLanding;

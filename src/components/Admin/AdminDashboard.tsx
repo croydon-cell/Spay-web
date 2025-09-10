@@ -40,7 +40,7 @@ const AdminDashboard: React.FC = () => {
             {!isCollapsed && (
               <div>
                 <span className="text-xl font-bold">Admin Panel</span>
-                <div className="text-xs text-gray-400">SubscribePay v2.0</div>
+                <div className="text-xs text-gray-400">SubversePay v2.0</div>
               </div>
             )}
           </div>
@@ -228,7 +228,7 @@ const AdminDashboard: React.FC = () => {
           <div className="flex items-center justify-between text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <Info className="h-4 w-4" strokeWidth={1.5} />
-              <span>SubscribePay Admin v2.1.0</span>
+              <span>SubversePay Admin v2.1.0</span>
             </div>
             <p>Last updated: 2 minutes ago</p>
           </div>

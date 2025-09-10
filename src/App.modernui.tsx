@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SubscribePayLanding from './components/SubscribePayLanding';
+import SubversePayLanding from './components/SubscribePayLanding';
 import DashboardMain from './components/Dashboard/DashboardMain';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import CheckoutPage from './components/Checkout/CheckoutPage';
@@ -51,7 +51,7 @@ function App() {
       <main className="transition-all duration-300 ease-in-out">
         {currentView === 'landing' && (
           <div className="animate-fade-in-up">
-            <SubscribePayLanding />
+            <SubversePayLanding />
           </div>
         )}
         {currentView === 'dashboard' && (
@@ -69,7 +69,7 @@ function App() {
                   </div>
                   <div>
                     <h1 className="heading-3 text-gray-900 mb-2">Welcome Back</h1>
-                    <p className="body-medium text-gray-600">Sign in to your SubscribePay account</p>
+                    <p className="body-medium text-gray-600">Sign in to your SubversePay account</p>
                   </div>
                   <div className="space-y-4">
                     <input

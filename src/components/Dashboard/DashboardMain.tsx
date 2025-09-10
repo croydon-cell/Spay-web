@@ -235,7 +235,7 @@ const DashboardMain: React.FC = () => {
               <a href="#" className="hover:text-blue-600 transition-colors duration-200 font-medium">Terms</a>
               <a href="#" className="hover:text-blue-600 transition-colors duration-200 font-medium">Support</a>
             </div>
-            <p className="font-medium">© 2024 SubscribePay. All rights reserved.</p>
+            <p className="font-medium">© 2024 SubversePay. All rights reserved.</p>
           </div>
         </footer>
       </main>

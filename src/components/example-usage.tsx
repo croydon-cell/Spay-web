@@ -1,10 +1,10 @@
 import React from 'react';
-import SubscribePayLanding from './SubscribePayLanding';
+import SubversePayLanding from './SubscribePayLanding';
 
 const ExampleUsage: React.FC = () => {
   return (
     <div className="min-h-screen">
-      <SubscribePayLanding />
+      <SubversePayLanding />
     </div>
   );
 };

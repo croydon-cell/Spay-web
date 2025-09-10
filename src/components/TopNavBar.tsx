@@ -70,7 +70,7 @@ const TopNavBar: React.FC<{
               />
             </div>
             <span className="text-2xl font-bold tracking-tight">
-              <span className="text-blue-600">Subscribe</span>
+              <span className="text-blue-600">Subverse</span>
               <span className="text-gray-700">Pay</span>
             </span>
           </div>
@@ -232,7 +232,7 @@ const TopNavBar: React.FC<{
                 <div className="absolute right-0 top-full mt-2 w-48 bg-white/95 backdrop-blur-xl border border-gray-200/50 rounded-xl shadow-xl py-2 animate-fade-in-scale">
                   <div className="px-4 py-3 border-b border-gray-100">
                     <div className="font-semibold text-gray-900">John Doe</div>
-                    <div className="text-sm text-gray-500">john@subscribepay.com</div>
+                    <div className="text-sm text-gray-500">john@subversepay.com</div>
                   </div>
                   <button 
                     className="block w-full text-left px-4 py-2.5 text-gray-700 hover:text-red-600 hover:bg-red-50/50 transition-all duration-200"

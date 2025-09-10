@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SubscribePayLanding from './components/SubscribePayLanding';
+import SubversePayLanding from './components/SubscribePayLanding';
 import DashboardMain from './components/Dashboard/DashboardMain';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import CheckoutPage from './components/Checkout/CheckoutPage';
@@ -47,7 +47,7 @@ function App() {
         onLogout={() => { setToken(null); handleNavigate('login'); }}
         currentView={currentView}
       />
-      {currentView === 'landing' && <SubscribePayLanding />}
+      {currentView === 'landing' && <SubversePayLanding />}
       {currentView === 'dashboard' && <DashboardMain />}
       {currentView === 'login' && <Login onLogin={setToken} />}
       {currentView === 'transactions' && <TransactionsDashboard token={token || undefined} />}

@@ -69,7 +69,7 @@ const KeyFeatures: React.FC = () => {
         <div className="text-center mb-20 animate-fade-in-up">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Sparkles className="h-6 w-6 text-blue-600" />
-            <span className="text-blue-600 font-semibold text-lg">Why Choose SubscribePay?</span>
+            <span className="text-blue-600 font-semibold text-lg">Why Choose SubversePay?</span>
           </div>
           <h2 className="heading-2 text-gray-900 mb-6">
             Experience the Next Generation of{' '}
@@ -140,7 +140,7 @@ const KeyFeatures: React.FC = () => {
                 Ready to Transform Your Payment Experience?
               </h3>
               <p className="body-medium text-gray-600 max-w-2xl mx-auto">
-                Join thousands of businesses already using SubscribePay to power their subscription revenue.
+                Join thousands of businesses already using SubversePay to power their subscription revenue.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="primary" size="lg" icon={ArrowRight} iconPosition="right">
