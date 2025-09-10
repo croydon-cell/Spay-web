@@ -6,7 +6,7 @@ import Card from './ui/Card';
 import Button from './ui/Button';
 import Badge from './ui/Badge';
 import { 
-  Play, 
+  Tv, 
   CheckCircle, 
   ArrowRight, 
   Zap, 
@@ -14,10 +14,11 @@ import {
   Users, 
   BarChart3, 
   Smartphone,
-  Globe,
+  Wifi,
   TrendingUp,
   Brain,
-  Target
+  Dumbbell,
+  GraduationCap
 } from 'lucide-react';
 
 const SubversePayLanding: React.FC = () => {
@@ -30,21 +31,21 @@ const SubversePayLanding: React.FC = () => {
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge variant="info" size="md" className="mb-4">Industry Solutions</Badge>
+            <Badge variant="info" size="md" className="mb-4">Industry Solutions (Offline SMB First)</Badge>
             <h2 className="heading-2 text-gray-900 mb-6">
-              Powering Subscriptions Across <span className="text-gradient">Industries</span>
+              Powering <span className="text-gradient">Offline Businesses</span>
             </h2>
             <p className="body-large text-gray-600 max-w-3xl mx-auto">
-              From OTT platforms to SaaS applications, our payment gateway adapts to your business needs.
+              "If your business depends on monthly collections, SubversePay makes it predictable and easy."
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Play, title: 'OTT Platforms', desc: 'Netflix, Prime Video, Disney+', color: 'red' },
-              { icon: Globe, title: 'SaaS Applications', desc: 'Zoom, Slack, Adobe Creative', color: 'blue' },
-              { icon: Users, title: 'EdTech Platforms', desc: 'Coursera, Udemy, Skillshare', color: 'green' },
-              { icon: Target, title: 'Fitness Apps', desc: 'Cult.fit, Nike Training', color: 'purple' }
+              { icon: Tv, title: 'Cable TV Operators (LCOs)', desc: 'Automate monthly bill collections, reduce cash hassle', color: 'red' },
+              { icon: Wifi, title: 'Regional ISPs', desc: 'Collect broadband fees reliably, avoid late payments', color: 'blue' },
+              { icon: Dumbbell, title: 'Gyms & Fitness Studios', desc: 'Keep memberships active with seamless recurring billing', color: 'green' },
+              { icon: GraduationCap, title: 'Tuition & Coaching Centers', desc: 'Ensure steady fee collections, reduce student drop-offs', color: 'purple' }
             ].map((useCase, index) => (
               <Card key={index} variant="default" padding="lg" hover className="text-center group">
                 <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center bg-gradient-to-br ${
