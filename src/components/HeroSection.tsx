@@ -154,8 +154,8 @@ const HeroSection: React.FC = () => {
                 <div className="space-y-3">
                   <div className="text-sm font-semibold text-gray-700 mb-3">Recent Transactions</div>
                   {[
-                    { name: 'TATA Sky Recharge', amount: '₹299', status: 'success', time: '2m ago' },
-                    { name: 'Airtel Broadband', amount: '₹899', status: 'success', time: '5m ago' },
+                    { name: 'TACTV Cable TV', amount: '₹299', status: 'success', time: '2m ago' },
+                    { name: 'CherryNet Broadband', amount: '₹899', status: 'success', time: '5m ago' },
                     { name: 'Gold Gym Membership', amount: '₹2,500', status: 'retry', time: '8m ago' }
                   ].map((transaction, index) => (
                     <div key={index} className="flex items-center justify-between p-3 bg-white/60 rounded-xl border border-white/40 hover:bg-white/80 transition-all duration-200">
