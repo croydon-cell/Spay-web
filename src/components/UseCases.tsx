@@ -1,33 +1,33 @@
 import React, { useState } from 'react';
-import { Play, BookOpen, Dumbbell, Settings } from 'lucide-react';
+import { Tv, Wifi, Dumbbell, GraduationCap } from 'lucide-react';
 
 const UseCases: React.FC = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const useCases = [
     {
-      icon: Play,
-      title: 'OTT & Entertainment',
-      description: 'Perfect for streaming platforms, music services, and digital content subscriptions.',
-      stats: '500M+ transactions',
+      icon: Tv,
+      title: 'Cable TV Operators (LCOs)',
+      description: 'Automate monthly bill collections, reduce cash hassle',
+      stats: 'Reliable Collections',
     },
     {
-      icon: BookOpen,
-      title: 'EdTech Platforms',
-      description: 'Seamless course subscriptions, learning platform memberships, and educational content.',
-      stats: '50M+ learners',
+      icon: Wifi,
+      title: 'Regional ISPs',
+      description: 'Collect broadband fees reliably, avoid late payments',
+      stats: 'Zero Defaults',
     },
     {
       icon: Dumbbell,
-      title: 'Gyms & Fitness',
-      description: 'Automated gym memberships, fitness app subscriptions, and wellness programs.',
-      stats: '10M+ members',
+      title: 'Gyms & Fitness Studios',
+      description: 'Keep memberships active with seamless recurring billing',
+      stats: 'Active Memberships',
     },
     {
-      icon: Settings,
-      title: 'SaaS Tools',
-      description: 'Software subscriptions, API usage billing, and enterprise solution payments.',
-      stats: '100K+ businesses',
+      icon: GraduationCap,
+      title: 'Tuition & Coaching Centers',
+      description: 'Ensure steady fee collections, reduce student drop-offs',
+      stats: 'Steady Revenue',
     },
   ];
 
@@ -36,10 +36,10 @@ const UseCases: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Built for Every Industry
+            Industry Solutions (Offline SMB First)
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From entertainment to education, fitness to SaaS - we power subscriptions across industries
+            "If your business depends on monthly collections, SubversePay makes it predictable and easy."
           </p>
         </div>
         

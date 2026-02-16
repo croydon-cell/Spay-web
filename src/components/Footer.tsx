@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
           {/* Logo and description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/logo.png" alt="SubscribePay Logo" className="h-10 w-10" />
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="SubversePay Logo" className="h-10 w-10 rounded-xl" />
               <span className="text-xl font-bold">
-                <span className="text-gray-400">Subscribe</span>
+                <span className="text-gray-400">Subverse</span>
                 <span className="text-primary">Pay</span>
               </span>
             </div>
@@ -45,8 +45,8 @@ const Footer: React.FC = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a 
-                      href="#" 
+                    <a
+                      href="#"
                       className="text-gray-400 hover:text-white transition-colors duration-200 relative group"
                     >
                       {link}
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SubscribePay. All rights reserved.
+            © 2024 SubversePay. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">

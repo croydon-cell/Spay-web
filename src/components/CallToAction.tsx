@@ -22,7 +22,7 @@ const CallToAction: React.FC = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-10 leading-relaxed">
-            Join thousands of businesses already using SubscribePay to power their subscription growth. 
+            Join thousands of businesses already using SubversePay to power their subscription growth. 
             Start your free trial today and experience the future of payments.
           </p>
 

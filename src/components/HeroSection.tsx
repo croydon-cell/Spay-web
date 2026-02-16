@@ -32,15 +32,16 @@ const HeroSection: React.FC = () => {
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="heading-1 text-gray-900 leading-tight">
+                India's First{' '}
                 <span className="text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-                  Smart Subscription
+                  Offline Subscription
                 </span>
                 <br />
                 Payment Gateway
               </h1>
               
               <p className="body-large text-gray-600 leading-relaxed max-w-lg">
-                Seamlessly manage recurring payments across OTT, EdTech, SaaS, Fitness, Cable TV, and ISPs powered by UPI AutoPay and an intelligent retry system.
+                Seamlessly collect recurring payments for cable operators, ISPs, gyms, and tuition centers. Powered by UPI AutoPay + Smart Retry, SubversePay ensures predictable payments, fewer defaults, and lower MDR.
               </p>
             </div>
             
@@ -153,9 +154,9 @@ const HeroSection: React.FC = () => {
                 <div className="space-y-3">
                   <div className="text-sm font-semibold text-gray-700 mb-3">Recent Transactions</div>
                   {[
-                    { name: 'Netflix Premium', amount: '₹649', status: 'success', time: '2m ago' },
-                    { name: 'Spotify Family', amount: '₹179', status: 'success', time: '5m ago' },
-                    { name: 'Adobe Creative', amount: '₹1,675', status: 'retry', time: '8m ago' }
+                    { name: 'TACTV Cable TV', amount: '₹299', status: 'success', time: '2m ago' },
+                    { name: 'CherryNet Broadband', amount: '₹899', status: 'success', time: '5m ago' },
+                    { name: 'Gold Gym Membership', amount: '₹2,500', status: 'retry', time: '8m ago' }
                   ].map((transaction, index) => (
                     <div key={index} className="flex items-center justify-between p-3 bg-white/60 rounded-xl border border-white/40 hover:bg-white/80 transition-all duration-200">
                       <div className="flex items-center space-x-3">

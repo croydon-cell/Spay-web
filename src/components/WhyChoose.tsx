@@ -48,7 +48,7 @@ const WhyChoose: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            The SubscribePay Advantage
+            The SubversePay Advantage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experience unmatched reliability, security, and performance for your subscription business

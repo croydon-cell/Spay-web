@@ -127,9 +127,9 @@ const DashboardMain: React.FC = () => {
               </div>
               <div className="space-y-3">
                 {[
-                  { name: 'Netflix Premium', users: '2,847', revenue: '₹18.4L', status: 'active' },
-                  { name: 'Spotify Family', users: '1,923', revenue: '₹3.4L', status: 'active' },
-                  { name: 'Adobe Creative', users: '847', revenue: '₹14.2L', status: 'active' }
+                  { name: 'TACTV Cable TV', users: '2,847', revenue: '₹8.5L', status: 'active' },
+                  { name: 'Gold Gym Membership', users: '1,923', revenue: '₹48.1L', status: 'active' },
+                  { name: 'ICOM Broadband', users: '847', revenue: '₹7.6L', status: 'active' }
                 ].map((sub, index) => (
                   <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
                     <div>
@@ -193,10 +193,10 @@ const DashboardMain: React.FC = () => {
             </div>
             <div className="space-y-3">
               {[
-                { id: 'TXN001', customer: 'John Doe', amount: '₹649', service: 'Netflix Premium', status: 'success', time: '2 min ago' },
-                { id: 'TXN002', customer: 'Jane Smith', amount: '₹179', service: 'Spotify Family', status: 'success', time: '5 min ago' },
-                { id: 'TXN003', customer: 'Mike Johnson', amount: '₹1,675', service: 'Adobe Creative', status: 'retry', time: '8 min ago' },
-                { id: 'TXN004', customer: 'Sarah Wilson', amount: '₹299', service: 'Disney+ Hotstar', status: 'failed', time: '12 min ago' }
+                { id: 'TXN001', customer: 'Rajesh Kumar', amount: '₹299', service: 'TACTV Cable TV', status: 'success', time: '2 min ago' },
+                { id: 'TXN002', customer: 'Priya Sharma', amount: '₹2,500', service: 'Gold Gym Membership', status: 'success', time: '5 min ago' },
+                { id: 'TXN003', customer: 'Amit Patel', amount: '₹899', service: 'ICOM Broadband', status: 'retry', time: '8 min ago' },
+                { id: 'TXN004', customer: 'Sunita Verma', amount: '₹1,200', service: 'CherryNet Broadband', status: 'failed', time: '12 min ago' }
               ].map((txn, index) => (
                 <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
                   <div className="flex items-center space-x-4">
@@ -235,7 +235,7 @@ const DashboardMain: React.FC = () => {
               <a href="#" className="hover:text-blue-600 transition-colors duration-200 font-medium">Terms</a>
               <a href="#" className="hover:text-blue-600 transition-colors duration-200 font-medium">Support</a>
             </div>
-            <p className="font-medium">© 2024 SubscribePay. All rights reserved.</p>
+            <p className="font-medium">© 2024 SubversePay. All rights reserved.</p>
           </div>
         </footer>
       </main>

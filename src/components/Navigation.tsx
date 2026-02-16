@@ -8,12 +8,8 @@ const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src="/logo.png" alt="SubscribePay" className="h-10 w-10 rounded-xl shadow-md" />
-            <span className="text-2xl font-bold tracking-tight">
-              <span className="text-blue-600">Subscribe</span>
-              <span className="text-gray-700">Pay</span>
-            </span>
+          <div className="flex items-center">
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="SubversePay" className="h-10 w-10 rounded-xl shadow-md" />
           </div>
 
           {/* Navigation Links */}

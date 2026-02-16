@@ -1,6 +1,6 @@
-# SubscribePay - Modern Fintech UI Interface
+# SubversePay - Modern Fintech UI Interface
 
-A modern, futuristic fintech user interface for SubscribePay – India's first subscription-focused payment gateway. Built with React, TypeScript, and Tailwind CSS.
+A modern, futuristic fintech user interface for SubversePay – India's first subscription-focused payment gateway. Built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -58,6 +58,6 @@ components/
 ├── HowItWorks.tsx         # Process timeline
 ├── CallToAction.tsx       # Final CTA banner
 ├── Footer.tsx             # Footer with links
-├── SubscribePayLanding.tsx # Main landing page
+├── SubversePayLanding.tsx # Main landing page
 └── example-usage.tsx      # Usage example
 ```
